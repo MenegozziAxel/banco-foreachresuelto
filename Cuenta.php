@@ -45,7 +45,7 @@ abstract class Cuenta
     public function depositar($monto)
     {
         $this->saldo += $monto;
-        $this->movcuenta[] = $monto;
+        $this->movcuenta[] = +$monto;
         return "El depósito se realizó correctamente.";
     }
 
